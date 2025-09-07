@@ -2,4 +2,6 @@
 end = int(input("Enter number: "))
 
 # TODO: Print the numbers 0 to end
-print()
+for ends in range(end):
+    print(ends)
+print(ends + 1)

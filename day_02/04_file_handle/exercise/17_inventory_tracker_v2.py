@@ -28,6 +28,19 @@ def show(inventory):
 
 def save(inventory, filepath):
     """TODO: Save the inventory (list[dict]) to a filepath"""
+    import json
+
+    with open(filepath, 'w') as file:
+        json.dump(inventory, file)
+
+def load(inventory, filepath):
+    """TODO: Save the inventory (list[dict]) to a filepath"""
+    import json
+
+    with open(filepath, 'r') as file:
+        inventory = json.load(file)
+        return inventory
+        #json.dump(inventory, file)
 
 
 def main():
@@ -60,6 +73,12 @@ def main():
         elif command == "save":
             filepath = input("Filepath: ")
             save(inventory, filepath)
+
+        elif command == "load":
+            filepath = input("Filepath: ")
+            #save(inventory, filepath)
+            inventory = load(inventory, filepath)
+            #show(inventory)
 
         elif command == "exit":
             running = False

@@ -17,3 +17,6 @@ number = 3
 3 x 9 = 27
 3 x 10 = 30
 """
+for x in range(1, 11):
+    r = x * number
+    print(f"{number} x {x} = {r}")

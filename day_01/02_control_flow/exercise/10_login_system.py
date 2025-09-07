@@ -5,5 +5,9 @@ correct_password = "pass"
 password_input = input("Please provide password: ")
 
 # TODO: Notify user if password is valid
-correct_password_given = None
+if (password_input == correct_password):
+    correct_password_given = "YES"
+else:
+    correct_password_given = "No"
+#correct_password_given = None
 print("Access:", correct_password_given)

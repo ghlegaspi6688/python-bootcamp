@@ -3,4 +3,6 @@ start = int(input("Enter start: "))
 end = int(input("Enter end: "))
 
 # TODO: Print the numbers start to end
-print()
+for n in range(start, end + 1):
+    print(n)
+

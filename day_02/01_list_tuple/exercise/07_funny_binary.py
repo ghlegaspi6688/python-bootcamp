@@ -7,5 +7,14 @@ binary_a = list(bin(ord('a')))
 binary_a = binary_a[2:]
 
 # TODO: Create the binary for 'hahaha'
-binary = []
-print(binary)
+#binary = []
+#print(binary)
+
+#for binary_h, binary_a in zip(binary_h, binary_a):
+#    print(f"{binary_h}{binary_a}")
+
+#print(binary_h)
+#print(binary_a)
+
+binary_ha = binary_h + binary_a
+print(binary_ha * 3)
