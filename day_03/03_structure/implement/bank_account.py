@@ -1,6 +1,6 @@
 class BankAccount:
     def __init__(self, initial_balance=0):
-        self.balance = initial_balance
+        self._balance = initial_balance
 
     def deposit(self, amount):
         if amount < 0:
@@ -16,3 +16,6 @@ class BankAccount:
 
     def print_balance(self):
         print(self.balance)
+
+amount = int(input("Enter Amount: "))
+
