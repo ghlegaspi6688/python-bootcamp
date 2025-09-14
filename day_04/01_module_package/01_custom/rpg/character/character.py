@@ -6,6 +6,10 @@ class Character(ABC):
         self._health = health
         self._defense = defense
 
+    @property
+    def health(self):
+        return self._health
+
     @abstractmethod
     def attack(self, other):
         raise NotImplementedError()
